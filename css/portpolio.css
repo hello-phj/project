@@ -10,23 +10,34 @@ body {
   line-height: 1.6;
   font-size: 18px;
 }
-
+main {
+  margin-top: 126px;
+}
 .container {
   width: 85%;
   max-width: 1100px;
   margin: 0 auto;
+  position: relative;
 }
 
 .header {
   background-color: #333;
   color: white;
-  padding: 20px 0;
+  position: fixed;
+  top: 0;
   text-align: center;
+  width: 100%;
+  z-index: 2;
+  padding: 20px 0;
 }
 
 .header-nav ul {
   list-style: none;
   padding: 0;
+}
+
+.header-nav {
+  color: white;
 }
 
 .about-description {
@@ -57,7 +68,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 0;
+  padding: 60px 30px;
   background-color: #fff;
 }
 
